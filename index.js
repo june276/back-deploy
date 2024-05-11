@@ -18,6 +18,7 @@ app.use(cors({
 	origin: '*',
 	methods: ['GET', 'POST', 'DELETE', 'PUT'],
 	credentials: true,
+	optionsSuccessStatus: 200,
 }))
 
 app.use(express.urlencoded({extended: false}));
