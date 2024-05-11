@@ -20,10 +20,10 @@ app.use(cors({
 	credentials: true,
 }))
 
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({extended: false}));
 
-app.use('/', router)
-app.use('/test', router)
+app.use('/', router);
+app.use('/test', router);
 
 app.listen(PORT, ()=>{
 	console.log('테스트 서버 실행');
